@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BasketBall ScoreCard</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="BasketBall">
+      <!-- Main Container-->
+      <div class="BasketBall_MainContainer">
+        <!-- Home Team Card-->
+        <div class="BasketBall_HomeTeamCard">
+          <div class="BasketBall_Title">Home</div>
+          <div class="BasketBall_Display homeDisplay">0</div>
+          <div class="BasketBall_IncrementButtons">
+            <button class="BasketBall_Btn1" onclick="homeCntIncrement(1)">
+              +1
+            </button>
+            <button class="BasketBall_Btn1" onclick="homeCntIncrement(2)">
+              +2
+            </button>
+            <button class="BasketBall_Btn1" onclick="homeCntIncrement(3)">
+              +3
+            </button>
+          </div>
+        </div>
+
+        <!-- Guest Team Card -->
+        <div class="BasketBall_GuestTeamCard">
+          <div class="BasketBall_Title">Guest</div>
+          <div class="BasketBall_Display guestDisplay">0</div>
+          <div class="BasketBall_IncrementButtons">
+            <button class="BasketBall_Btn1" onclick="guestCntIncrement(1)">
+              +1
+            </button>
+            <button class="BasketBall_Btn1" onclick="guestCntIncrement(2)">
+              +2
+            </button>
+            <button class="BasketBall_Btn1" onclick="guestCntIncrement(3)">
+              +3
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="BasketBall_ResetBtnContainer">
+        <button class="BasketBall_ResetBtn" onclick="resetGame()">Restart Game</button>
+      </div>
+    </div>
+    <!--- Main Container Card -->
+
+    <script src="./index.js"></script>
+  </body>
+</html>
